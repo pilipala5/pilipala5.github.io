@@ -1,3 +1,64 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: "https://pilipala5.github.io/"
+languageCode: "en-us"
+title: "YH's Log"
+theme: ["PaperMod"]
+
+menu:
+  main:
+    - identifier: Posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: Archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 40
+
+params:
+  assets:
+    css:
+      - "css/custom.css"
+  title: "pilipala5's Blog"
+  description: "My personal blog using Hugo and PaperMod"
+  author: "pilipala5"
+  profileMode:
+    enabled: false
+  showTags: true
+  showToc: true
+  showReadingTime: true
+  showPostNavLinks: true
+  homeInfoParams:
+    Title: "🐕Welcome to Yuhan's Log"
+    Content: |
+      Hi, this is Yuhan's Log.
+  socialIcons:
+    - name: github
+      url: "https://github.com/pilipala5"
+    - name: csdn
+      url: "https://blog.csdn.net/m0_62716099?spm=1000.2115.3001.5343"
+  defaultTheme: "dark"
+  mainSections:
+    - posts
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
