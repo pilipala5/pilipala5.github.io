@@ -9,17 +9,17 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
-    - identifier: Archives
-      name: Archives
-      url: /archives/
-      weight: 20
     - identifier: Tags
       name: Tags
       url: /tags/
-      weight: 30
+      weight: 20
     - identifier: Search
       name: Search
       url: /search/
+      weight: 30
+    - identifier: Archives
+      name: Archives
+      url: /archives/
       weight: 40
 
 params:
