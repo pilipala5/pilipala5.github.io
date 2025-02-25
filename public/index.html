@@ -98,7 +98,7 @@
         <h1>🐕Welcome to Yuhan&rsquo;s Log</h1>
     </header>
     <div class="entry-content">
-        Hi, this is Yuhan&rsquo;s Log.
+        Hi, I am a student from the School of Remote Sensing and Information Engineering, Wuhan University.I will share some of my learning experiences and thoughts here. Hope you like it!😊
     </div>
     <footer class="entry-footer">
         <div class="social-icons" >
@@ -126,15 +126,26 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">My First Post
+    <h2 class="entry-hint-parent">Hugo&#43;PaperMod&#43;Github创建自己的博客网站
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction This is my first blog post using Hugo and PaperMod.
-</p>
+    <p>1. 引言 Lilian Weng’s Log: https://lilianweng.github.io/
+​	在学习的过程中，偶然看见了Lilian Weng的个人博客网站，感觉像她那样记录自己的思想很有意义，因此学习她搭建了这个网页。希望以后也能分享自己的一些学习记录与思考。
+​	在搭建这个网页的时候也走了一些弯路，因此，特意写一篇博客在这里，记录一下我搭建这个网页的过程，供大家参考。
+2. 页面构建 2.1 Hugo下载 ​	首先整个页面是基于Hugo搭建的，因此我们需要在电脑上下载Hugo。我的电脑是windows系统，直接在网上找到对应版本下载即可。下载之后解压文件夹，结构如下：
+​	接下来，运行 hugo.exe 文件，运行后关闭，在该文件根目录，打开终端，输入
+hugo version ​	输出版本号，则说明hugo安装成功，
+​	然后将 hugo.exe 文件夹所在根目录加入”系统环境变量-系统变量-Path“中。添加完成后，随意在其他目录下打开终端，运行 hugo version，若能显示版本号，则说明环境变量配置成功。
+2.2 构建页面 如下内容参考官方链接（20250225）： https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
+​	然后找到你想要构建页面的目录，打开终端，输入如下命令：
+hugo new site MyFreshWebsite --format yaml # replace MyFreshWebsite with name of your website ​	这里 MyFreshWebsite 会生成一个名叫 MyFreshWebsite 的文件夹，然后不要关闭终端，接着输入（这里的MyFreshWebsite 可以自定义，但是后面需要对应）：
+cd MyFreshWebsite 2.3 主题安装 ​	这样我们就成功的构建了一个网页。接下来我们需要安装 PaperMod 主题，这里我们按照官方页面上推荐的方式。这里需要提前安装好 Git。没有安装的同学，我给大家找了一个教程，大家参考着自己安装（Git安装教程）。然后我们在 MyFreshWebsite 目录下，输入如下命令：
+git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive # needed when you reclone your repo (submodules may not get cloned automatically) git submodule update --remote --merge ​	这样我们就成功下载了 PaperMod 主题了。MyFreshWebsite 的文件结构应当如下，这个图片我给的是我最终的版本，有些许不一样应该不重要，重要是关于hugo.yaml文件：
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-23 10:00:00 +0000 +0000'>February 23, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;pilipala5</footer>
-  <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:1313/posts/my-first-post/"></a>
+  <footer class="entry-footer"><span title='2025-02-25 00:00:00 +0000 +0000'>February 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;pilipala5</footer>
+  <a class="entry-link" aria-label="post link to Hugo&#43;PaperMod&#43;Github创建自己的博客网站" href="http://localhost:1313/posts/hugo&#43;papermod&#43;github%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/"></a>
 </article>
     </main>
     

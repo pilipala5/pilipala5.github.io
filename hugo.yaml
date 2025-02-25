@@ -38,7 +38,7 @@ params:
   homeInfoParams:
     Title: "🐕Welcome to Yuhan's Log"
     Content: |
-      Hi, this is Yuhan's Log.
+      Hi, I am a student from the School of Remote Sensing and Information Engineering, Wuhan University.I will share some of my learning experiences and thoughts here. Hope you like it!😊
   socialIcons:
     - name: github
       url: "https://github.com/pilipala5"
